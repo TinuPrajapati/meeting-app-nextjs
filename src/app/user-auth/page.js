@@ -6,6 +6,7 @@ import React, { useState,useEffect } from "react";
 import toast from "react-hot-toast";
 import Loader from "../components/Loader";
 import { signIn } from "next-auth/react";
+import loginPic from "../../../public/Login pic.png"
 
 const AuthPage = () => {
   const [loading, setLoading] = useState(false);
@@ -31,7 +32,7 @@ const AuthPage = () => {
       {loading && <Loader />}
       <div className="hidden w-1/2 h-full lg:block">
         <Image
-          src={"/Login pic.png"}
+          src={loginPic}
           width={1080}
           height={1080}
           alt="Login Pic"
