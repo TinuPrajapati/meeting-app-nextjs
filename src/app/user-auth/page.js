@@ -6,7 +6,7 @@ import React, { useState,useEffect } from "react";
 import toast from "react-hot-toast";
 import Loader from "../components/Loader";
 import { signIn } from "next-auth/react";
-import loginPic from "../../../public/Login pic.png"
+import loginPic from "../../../public/LoginPic.png"
 
 const AuthPage = () => {
   const [loading, setLoading] = useState(false);
